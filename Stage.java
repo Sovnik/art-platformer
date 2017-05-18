@@ -6,7 +6,7 @@
  * @version (a version number or a date)
  */
 import javax.swing.JFrame;
-public class Game
+public class Stage
 {
     public static void main(String[] args)
     {
@@ -15,7 +15,7 @@ public class Game
         frame.setTitle("Stage");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        Stage component = new Stage();
+        Austria component = new Austria();
         frame.add(component);
         
         frame.setVisible(true);

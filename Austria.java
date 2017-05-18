@@ -16,21 +16,28 @@ import java.awt.geom.QuadCurve2D;
 //Swing is java's ui for frames, buttons, and other stuffs
 import javax.swing.JComponent;
 
-public class Stage extends JComponent
+public class Austria extends JComponent
 {
     public void paintComponent(Graphics g)
     {
         //Recover Graphics2d
         Graphics2D g2 = (Graphics2D) g;
         
-        Rectangle ground = new Rectangle(0, 800, 100, 100);
-        g2.setPaint(new Color(0, 255, 255));
-        g2.fill(ground);
+        Rectangle top = new Rectangle(0, 0, 200, 133);
+        g2.setPaint(new Color(255, 0, 0));
+        g2.fill(top);
         
-        for (int i = 0; i < 800; i++)
+        Rectangle bottom = new Rectangle(0, 266, 200, 133);
+        g2.setPaint(new Color(255, 0, 0));
+        g2.fill(bottom);
+        
+        for (int i = 0; i <= 500; i += 100)
         {
-            ground.setRect(0 + i, 0 - i, 100, 100);
-            g2.fill(ground);
+            top.setRect(0 + i, 0, 200, 133);
+            g2.fill(top);
+            
+            bottom.setRect(0 + i, 266, 100, 133);
+            g2.fill(bottom);
         }
         
         /*
