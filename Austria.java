@@ -23,20 +23,20 @@ public class Austria extends JComponent
         //Recover Graphics2d
         Graphics2D g2 = (Graphics2D) g;
         
-        Rectangle top = new Rectangle(0, 0, 200, 133);
+        Rectangle top = new Rectangle(0, 0, 100, 200);
         g2.setPaint(new Color(255, 0, 0));
         g2.fill(top);
         
-        Rectangle bottom = new Rectangle(0, 266, 200, 133);
+        Rectangle bottom = new Rectangle(0, 400, 100, 200);
         g2.setPaint(new Color(255, 0, 0));
         g2.fill(bottom);
         
-        for (int i = 0; i <= 500; i += 100)
+        for (int i = 0; i <= 800; i += 100)
         {
-            top.setRect(0 + i, 0, 200, 133);
+            top.setRect(0 + i, 0, 100, 200);
             g2.fill(top);
             
-            bottom.setRect(0 + i, 266, 100, 133);
+            bottom.setRect(0 + i, 400, 100, 200);
             g2.fill(bottom);
         }
         
