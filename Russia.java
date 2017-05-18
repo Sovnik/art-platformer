@@ -15,6 +15,11 @@ public class Russia extends JComponent{
     
         Graphics2D g2 = (Graphics2D) g;
 
-        Rectangle top = new Rectangle(0, 0, 200, 100)
+        Rectangle mid = new Rectangle(0, 200, 900, 200);
+        g2.setPaint(new Color(0, 0, 255));
+        g2.fill(mid);
+        Rectangle bot = new Rectangle(0, 400, 900, 200);
+        g2.setPaint(new Color(255, 0, 0));
+        g2.fill(bot);
     }
 }
