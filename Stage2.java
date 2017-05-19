@@ -6,16 +6,16 @@
  * @version (a version number or a date)
  */
 import javax.swing.JFrame;
-public class Stage
+public class Stage2
 {
     public static void main(String[] args)
     {
         JFrame frame = new JFrame();
-        frame.setSize(918 , 636);
+        frame.setSize(900 , 600);
         frame.setTitle("Stage");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        Austria component = new Austria();
+        Russia component = new Russia();
         frame.add(component);
         
         frame.setVisible(true);
