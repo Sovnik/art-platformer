@@ -11,7 +11,7 @@ public class Stage2
     public static void main(String[] args)
     {
         JFrame frame = new JFrame();
-        frame.setSize(900 , 600);
+        frame.setSize(916 , 636);
         frame.setTitle("Stage");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         

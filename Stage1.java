@@ -15,7 +15,7 @@ public class Stage1
         frame.setTitle("Stage");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        Italy component = new Italy();
+        China component = new China();
         frame.add(component);
         
         frame.setVisible(true);
