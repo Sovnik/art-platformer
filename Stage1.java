@@ -15,7 +15,7 @@ public class Stage1
         frame.setTitle("Stage");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
-        China component = new China();
+        Greenland component = new Greenland();
         frame.add(component);
         
         frame.setVisible(true);

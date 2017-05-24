@@ -33,11 +33,8 @@ public class China extends JComponent
         g2.fill(background);
 
         try {
-            BufferedImage img = ImageIO.read(new File("StarsOfChina.jpg"));
-            g2.drawImage(img,
-                0, 0, 100, 100,
-                0, 2000, 0, 1661,
-                null);
+            BufferedImage img = ImageIO.read(new File("StarsOfChina.png"));
+            g2.drawImage(img, 65, 50, 260, 200, null);
         }
         catch (java.io.IOException io) {
 
