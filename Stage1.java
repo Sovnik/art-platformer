@@ -60,6 +60,10 @@ public class Stage1 {
                 Greenland component = new Greenland();
                 frame.add(component);
             }
+            if (flag.equalsIgnoreCase("NorthKorea")) {
+                NorthKorea component = new NorthKorea();
+                frame.add(component);
+            }
             if (flag.equalsIgnoreCase("close")) {
                 break;
             }
