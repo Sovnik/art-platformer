@@ -6,6 +6,9 @@
  * @version (a version number or a date)
  */
 import javax.swing.JFrame;
+import java.awt.Container;
+import java.awt.Window;
+import java.awt.Component;
 import java.util.Scanner;
 public class Stage1 {
     public static void main(String[] args) {
@@ -63,6 +66,11 @@ public class Stage1 {
             if (flag.equalsIgnoreCase("NorthKorea")) {
                 NorthKorea component = new NorthKorea();
                 frame.add(component);
+            }
+            if(flag.equalsIgnoreCase("clear")) {
+                frame.getContentPane().removeAll();
+                frame.revalidate();
+                frame.repaint();
             }
             if (flag.equalsIgnoreCase("close")) {
                 break;
