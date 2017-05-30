@@ -23,15 +23,21 @@ public class Iceland extends JComponent
         //Recover Graphics2d
         Graphics2D g2 = (Graphics2D) g;
         Rectangle topLeftBlue = new Rectangle(0, 0, 900, 600);
-        g2.setPaint(new Color(0, 0, 255));
-        g2.draw(topLeftBlue);
+        g2.setPaint(new Color(2, 82, 156));
+        g2.fill(topLeftBlue);
 
         Rectangle whiteVert = new Rectangle(252, 0, 144, 600);
         g2.setPaint(new Color(255, 255, 255));
-        g2.draw(whiteVert);
+        g2.fill(whiteVert);
     
-        Rectangle whiteHoriz = new Rectangle(144, 0, 252, 600);
-        g2.setPaint(new Color(255, 255, 255));
-        g2.draw(whiteHoriz);
+        Rectangle whiteHoriz = new Rectangle(0, 233, 900, 133);
+        g2.fill(whiteHoriz);
+
+        Rectangle redVert = new Rectangle(288, 0, 72, 600);
+        g2.setPaint(new Color(220, 30, 53));
+        g2.fill(redVert);
+
+        Rectangle redHoriz = new Rectangle(0, 267, 900, 67);
+        g2.fill(redHoriz);
     }
 }
